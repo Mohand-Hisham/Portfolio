@@ -20,13 +20,13 @@ const About = () => {
           <div className="flex-1">
             <p className="mb-10 font-Ovo max-w-2xl">
               A passionate and highly motivated Frontend Developer specializing
-              in React.js and modern JavaScript. With a strong foundation in
-              HTML5, CSS3, and responsive design, I thrive on turning ideas into
-              pixel-perfect, user-friendly applications. I may be new to the
-              professional field, but my personal projects demonstrate a
-              commitment to clean code, state management (Redux/Context API),
-              and continuous learning. Eager to contribute my skills and grow
-              with a dynamic team.
+              in React.js, Next.js, and modern JavaScript. With a strong
+              foundation in HTML5, CSS3, and responsive design, I thrive on
+              turning ideas into pixel-perfect, user-friendly applications. I
+              may be new to the professional field, but my personal projects
+              demonstrate a commitment to clean code, state management with
+              Redux, and continuous learning. Eager to contribute my skills and
+              grow with a dynamic team.
             </p>
             <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
               {infoList.map(({ icon, iconDark, title, description }, index) => (

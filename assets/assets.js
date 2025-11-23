@@ -27,10 +27,10 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
+import react_icon from "./react_icon.png";
+import flash_icon from "./flash.png";
+import responsive_icon from "./cross-platform.png";
+import api_integration_icon from "./api-integration.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
@@ -66,10 +66,10 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
+  react_icon,
+  flash_icon,
+  responsive_icon,
+  api_integration_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -79,53 +79,53 @@ export const assets = {
 export const workData = [
   {
     title: "Omnifood",
-    description: "Web Design",
-    bgImage: `/api/screenshot?url=https://omnifood-mohandd.netlify.app/`,
+    description: "food delivery landing page.",
+    bgImage: "/work-1.png",
     link: "https://omnifood-mohandd.netlify.app/",
   },
   {
     title: "Resume Analyzer",
-    description: "Mobile App",
-    bgImage: `/api/screenshot?url=https://react-ai-resume-analyzer.netlify.app/`,
+    description: "AI-powered app analyze resumes",
+    bgImage: "/work-2.png",
     link: "https://react-ai-resume-analyzer.netlify.app/",
   },
   {
     title: "appie",
-    description: "Web Design",
-    bgImage: `/api/screenshot?url=https://appie-mohandd.netlify.app//`,
+    description: "Modern app showcase website",
+    bgImage: "/work-3.png",
     link: "https://appie-mohandd.netlify.app/",
   },
   {
     title: "Project Managment",
-    description: "UI/UX Design",
-    bgImage: `/api/screenshot?url=https://react-project-managment.netlify.app/`,
+    description: "Traking and managing projects",
+    bgImage: "/work-4.png",
     link: "https://react-project-managment.netlify.app/",
   },
 ];
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
+    icon: assets.react_icon,
     title: "Web design",
     description:
       "Building interactive web applications using React and Next.js...",
     link: "",
   },
   {
-    icon: assets.mobile_icon,
+    icon: assets.flash_icon,
     title: "Responsive Design",
     description: "Creating websites that work seamlessly across all devices",
     link: "",
   },
   {
-    icon: assets.ui_icon,
+    icon: assets.responsive_icon,
     title: "Performance Optimization",
     description:
       "Optimizing web applications for speed, SEO, and user experience...",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
+    icon: assets.api_integration_icon,
     title: "API Integration ",
     description:
       "Connecting frontends with backend services and third-party APIs",

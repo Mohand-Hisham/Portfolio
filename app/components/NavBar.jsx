@@ -38,7 +38,7 @@ export default function NavBar() {
         <Image
           src={assets.header_bg_color}
           alt=""
-          className="top-0 right-0 fixed w-32"
+          className=" top-0 right-0 fixed -z-10 w-full translate-y-[-80%]"
         />
       </div>
       <nav
@@ -91,7 +91,7 @@ export default function NavBar() {
             <Image src={assets.moon_icon} className="w-6" alt="moon-icon" />
           </button>
           <a
-            href="#contact"
+            href="#Contact"
             className="hidden lg:flex gap-3 items-center px-10 py-2.5 border border-gray-500 ml-4 rounded-full"
           >
             Contact
