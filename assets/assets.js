@@ -80,25 +80,25 @@ export const workData = [
   {
     title: "Omnifood",
     description: "Web Design",
-    bgImage: "/work-1.png",
+    bgImage: `/api/screenshot?url=https://omnifood-mohandd.netlify.app/`,
     link: "https://omnifood-mohandd.netlify.app/",
   },
   {
     title: "Resume Analyzer",
     description: "Mobile App",
-    bgImage: "/work-2.png",
+    bgImage: `/api/screenshot?url=https://react-ai-resume-analyzer.netlify.app/`,
     link: "https://react-ai-resume-analyzer.netlify.app/",
   },
   {
     title: "appie",
     description: "Web Design",
-    bgImage: "/work-3.png",
+    bgImage: `/api/screenshot?url=https://appie-mohandd.netlify.app//`,
     link: "https://appie-mohandd.netlify.app/",
   },
   {
     title: "Project Managment",
     description: "UI/UX Design",
-    bgImage: "/work-4.png",
+    bgImage: `/api/screenshot?url=https://react-project-managment.netlify.app/`,
     link: "https://react-project-managment.netlify.app/",
   },
 ];

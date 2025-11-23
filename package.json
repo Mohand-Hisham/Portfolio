@@ -12,6 +12,7 @@
     "@netlify/next": "^1.4.9",
     "@tailwindcss/vite": "^4.1.17",
     "next": "16.0.3",
+    "puppeteer": "^24.31.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
