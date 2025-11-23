@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { useState } from "react";
 
-const Contact = () => {
+const Contact = ({ isDarkMode }) => {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <div
       id="Contact"
-      className="scroll-mt-20 w-full py-10 px-[12%] bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto]"
+      className="scroll-mt-20 w-full py-10 px-[12%] bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto] dark:bg-none"
     >
       <h4 className="text-lg text-center font-Ovo">Get in touch</h4>
       <h2 className=" w-full  text-5xl text-center font-Ovo">Contact Me</h2>
@@ -38,29 +38,34 @@ const Contact = () => {
             type="text"
             placeholder="Enter your name"
             required
-            className="flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white "
+            className="flex-1 p-3 outline-none border border-gray-400 rounded-md bg-white dark:bg-darkHover/50 dark:border-white/90 "
             name="name"
           />
           <input
             type="text"
             placeholder="Enter your email"
             required
-            className="flex-1 p-3 outline-none  border-gray-400 rounded-md bg-white border-[0.5px] "
+            className="flex-1 p-3 outline-none  border-gray-400 rounded-md bg-white border-[0.5px] dark:bg-darkHover/50 dark:border-white/90"
             name="email"
           />
         </div>
         <textarea
           rows="6"
           placeholder="Enter your message"
-          className="w-full p-4 rounded-md border-gray-500 border bg-white mb-6 outline-none "
+          className="w-full p-4 rounded-md border-gray-500 border bg-white mb-6 outline-none dark:bg-darkHover/50 dark:border-white/90 "
           name="message"
         ></textarea>
 
         <button
           type="submit"
-          className="flex gap-2 items-center justify-center mx-auto rounded-full py-3 px-10 w-max border-[0.5px] border-gray-400 bg-black/80 text-white hover:bg-black duration-500"
+          className="flex gap-2 items-center justify-center mx-auto rounded-full py-3 px-10 w-max border-[0.5px] border-gray-400 bg-black/80 text-white hover:bg-black duration-500 dark:hover:bg-darkHover/50 "
         >
-          Submit now <Image src={assets.right_arrow} alt="" className="w-4" />
+          Submit now{" "}
+          <Image
+            src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow}
+            alt=""
+            className="w-4"
+          />
         </button>
         <p className="mt-4">{result}</p>
       </form>

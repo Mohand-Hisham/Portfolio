@@ -2,7 +2,7 @@ import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
 
-const Work = () => {
+const Work = ({ isDarkMode }) => {
   return (
     <div id="work" className="scroll-mt-20 w-full py-10 px-[12%]">
       <h4 className="text-lg text-center font-Ovo">My portfolio</h4>
@@ -12,7 +12,7 @@ const Work = () => {
         projects showcasing my expertise in front-end development.
       </p>
 
-      <div className="grid grid-cols-auto my-10 gap-6">
+      <div className="grid grid-cols-auto my-10 mb-40 gap-6">
         {workData.map((project, index) => (
           <a
             key={index}
@@ -26,7 +26,9 @@ const Work = () => {
             >
               <div className="bg-white absolute w-10/12 rounded-md py-3 px-5  bottom-5  left-1/2 -translate-x-1/2 duration-500  flex items-center justify-between group-hover:bottom-7 shadow-lg">
                 <div className="flex-1  pr-3">
-                  <h2 className="font-semibold">{project.title}</h2>
+                  <h2 className="font-semibold dark:text-black">
+                    {project.title}
+                  </h2>
                   <p className="text-gray-500">{project.description}</p>
                 </div>
                 <div className=" flex-shrink-0 border rounded-full border-black w-9 h-9  flex justify-center items-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
@@ -40,9 +42,14 @@ const Work = () => {
 
       {/* <a
         href=""
-        className="flex items-center justify-center gap-2 text-gray-800 rounded-full py-3 px-10 my-20  w-max mx-auto border-[0.5px] hover:bg-lighHover duration-500 "
+        className="flex items-center justify-center gap-2 text-gray-800 rounded-full py-3 px-10 my-20  w-max mx-auto border-[0.5px] hover:bg-lighHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover/50 "
       >
-        Show more <Image src={assets.right_arrow} alt="" className="w-4" />
+        Show more{" "}
+        <Image
+          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow}
+          alt=""
+          className="w-4"
+        />
       </a> */}
     </div>
   );
