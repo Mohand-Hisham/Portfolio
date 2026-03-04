@@ -78,6 +78,12 @@ export const assets = {
 
 export const workData = [
   {
+    title: "Trendlama",
+    description: "E-commerce website for trendy fashion",
+    bgImage: "/trendlama.png",
+    link: "https://trendlama.netlify.app/",
+  },
+  {
     title: "Omnifood",
     description: "food delivery landing page.",
     bgImage: "/work-1.png",
@@ -89,12 +95,13 @@ export const workData = [
     bgImage: "/work-2.png",
     link: "https://react-ai-resume-analyzer.netlify.app/",
   },
-  {
-    title: "appie",
-    description: "Modern app showcase website",
-    bgImage: "/work-3.png",
-    link: "https://appie-mohandd.netlify.app/",
-  },
+
+  // {
+  //   title: "appie",
+  //   description: "Modern app showcase website",
+  //   bgImage: "/work-3.png",
+  //   link: "https://appie-mohandd.netlify.app/",
+  // },
   {
     title: "Project Managment",
     description: "Traking and managing projects",
