@@ -89,11 +89,17 @@ export const workData = [
     bgImage: "/work-1.png",
     link: "https://omnifood-mohandd.netlify.app/",
   },
+  // {
+  //   title: "Resume Analyzer",
+  //   description: "AI-powered app analyze resumes",
+  //   bgImage: "/work-2.png",
+  //   link: "https://react-ai-resume-analyzer.netlify.app/",
+  // },
   {
-    title: "Resume Analyzer",
-    description: "AI-powered app analyze resumes",
-    bgImage: "/work-2.png",
-    link: "https://react-ai-resume-analyzer.netlify.app/",
+    title: "KIENTIC",
+    description: "E-commerce for luxury cars",
+    bgImage: "/KIENTIC.png",
+    link: "https://prime-wheels.mohandhisham4-b15.workers.dev/",
   },
 
   // {
